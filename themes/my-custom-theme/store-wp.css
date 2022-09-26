@@ -1,0 +1,223 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
+  width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.blog-nav li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.blog-nav li a {
+  color: black;
+}
+
+.blog-nav li a:hover,
+.blog-nav li a:focus {
+  color: #3c64b1;
+  text-decoration: none;
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  align-self: center;
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f6fa;
+  width: 100%;
+}
+
+/* Nav links */
+.blog-nav-item {
+  align-self: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #3c64b1;
+  text-decoration: none;
+}
+
+/* Active state turns blue */
+.blog-nav .active {
+  color: #3c64b1;
+}
+
+.blog-nav li a.active {
+  color: #3c64b1;
+}
+
+/*
+ * Header logo and description
+ */
+
+.header-logo {
+  padding: 15px;
+  margin-left: 15px;
+  color: #3c64b1;
+}
+
+.header-logo h3 {
+  color: #3c64b1;
+  text-transform: uppercase;
+}
+
+/*
+ * News styles
+ */
+
+
+.index-post-block {
+  display: flex;
+}
+
+.index-post-block * {
+  padding: 0 10px;
+}
+
+.news-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/*
+ * About us styles
+ */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about-content,
+.wp-block-embed {
+  align-self: center;
+}
+
+.about-content:nth-child(odd) {
+  margin: 15px 0;
+}
+
+
+/*
+ * Start page styles
+ */
+
+.start-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+/*
+ * Product page styles
+ */
+
+
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.product-page-title {
+  align-self: center;
+}
+
+
+/*
+ * News template
+ */
+
+.news-wrapper {
+  width: 200px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.template-news-wrap {
+  display: flex;
+}
+
+.template-wrap {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+/*
+ * Footer
+ */
+
+.footer {
+  width: 100%;
+  color: rgb(211, 209, 209);
+  background-color: #37413b;
+  padding-top: 13px;
+  padding-bottom: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
