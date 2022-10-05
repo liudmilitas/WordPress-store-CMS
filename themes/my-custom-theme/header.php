@@ -15,18 +15,4 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <div class="navigation-container">
-
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'left-main-menu'
-            )
-        );
-        ?>
-
-        <div class="site-title-navbar">
-            <h1><a href="/"><?= get_bloginfo('name'); ?></a></h1>
-        </div>
-
-    </div>
+    <?php get_template_part('template-parts/nav'); ?>

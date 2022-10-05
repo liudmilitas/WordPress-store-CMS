@@ -24,12 +24,10 @@
             )
         );
         ?>
-    </div>
-
-    
-    <div>
         <h3><a href="/"><?= get_bloginfo('name'); ?></a></h3>
     </div>
+        
+
 </div>
 
 </body>
