@@ -8,6 +8,4 @@ if ( have_posts() ) :
 else :
     _e( 'No entries found', 'textdomain' );
 endif;
-
-get_sidebar();
 get_footer();
