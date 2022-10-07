@@ -8,7 +8,7 @@
         <?php get_template_part('template-parts/template-news'); ?>
     </div>
 </div>
-
+<p>foo</p>
 
 
 <?php get_footer(); ?>

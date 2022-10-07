@@ -1,11 +1,17 @@
 <?php
-get_header();
+get_header();?>
 
-if ( have_posts() ) :
+<main>
+
+<?php if ( have_posts() ) :
     while ( have_posts() ) : the_post();
         the_content();
     endwhile;
 else :
     _e( 'No entries found', 'textdomain' );
-endif;
-get_footer();
+endif;?>
+
+</main>
+
+<?php get_footer();
+?>
