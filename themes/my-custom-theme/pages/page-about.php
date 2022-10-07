@@ -3,12 +3,14 @@
 <?php get_header(); ?>
 
 <div class="about-content">
-    <?php the_content(); ?>
-    <div class="template-wrap">
-        <?php get_template_part('template-parts/template-news'); ?>
-    </div>
+<div class="page-title">
+    <h2>
+        <?php the_title(); ?>
+    </h2>
 </div>
-<p>foo</p>
+    <?php the_content(); ?>
+</div>
+
 
 
 <?php get_footer(); ?>

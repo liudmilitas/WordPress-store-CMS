@@ -22,6 +22,10 @@ main {
   min-height: 500px;
 }
 
+.page-title h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -32,7 +36,6 @@ h6 {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   color: #333;
-  
 }
 
 /*
@@ -52,7 +55,7 @@ header {
 
 .blog-nav {
   width: 100%;
-  display: flex ;
+  display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -79,7 +82,8 @@ a:link {
   text-decoration: none;
 }
 
-.title-nav, h1 {
+.title-nav,
+h1 {
   text-transform: uppercase;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
@@ -93,8 +97,8 @@ a:link {
  * Footer
  */
 
- .footer-container {
-  background-color: #617C7C;
+.footer-container {
+  background-color: #617c7c;
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -128,7 +132,6 @@ a:link {
 
 .footer-menu-title {
   padding: 1rem 0;
-  
 }
 
 .footer-menu-title h3 {
@@ -171,15 +174,51 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  margin: 0;
+}
+
+.search-wrapper > * {
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  min-width: 60%;
   
 }
 
-.search-wrapper > *{
-  padding: 1rem 0;
-  font-family: "Montserrat", sans-serif;
+form.searchform div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
+form.searchform div input#s {
+  height: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
 
+form.searchform div input#searchsubmit {
+  background-color: #617c7c;
+  color: white;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/*
+ * About us
+ */
+
+.about-content {
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -191,6 +230,4 @@ a:link {
     justify-content: center;
     align-items: center;
   }
-
-
 }

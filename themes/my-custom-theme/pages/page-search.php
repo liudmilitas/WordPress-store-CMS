@@ -1,10 +1,7 @@
-<?php /* Template Name: Search Template */?>
+<?php /* Template Name: Search Template */ ?>
 
 <?php get_header(); ?>
 
-
-<header class="header">
-</header>
 
 <div class="search-wrapper">
     <h2 class="page-title">
