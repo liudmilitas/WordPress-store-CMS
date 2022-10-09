@@ -26,6 +26,15 @@ main {
   font-family: "Montserrat", sans-serif;
 }
 
+.page-title {
+  padding: 1rem;
+  align-self: center;
+}
+
+.products {
+  padding: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -92,6 +101,20 @@ h1 {
 .header-icons > * {
   padding: 10px;
 }
+
+.sub-menu {
+  display: none;
+  background-color: #ffffff;
+  padding: 15px;
+  list-style-type: none;
+  line-height: 26px;
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+  position: absolute;
+}
+
 
 /*
  * Footer
@@ -230,4 +253,19 @@ form.searchform div input#searchsubmit {
     justify-content: center;
     align-items: center;
   }
+}
+
+
+/*
+ * Product categories
+ */
+
+.term-description {
+  background-color: #BFC7C7;
+  width: 100%;
+  padding: 2rem;
+}
+
+.term-description p {
+  color: #ffffff;
 }

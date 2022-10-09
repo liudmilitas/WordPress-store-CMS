@@ -21,12 +21,16 @@ add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 register_nav_menus(array(
   'nav-menu' => esc_html__('nav menu', 'store-wp'),
-  'footer-nav' => esc_html__('footer nav', 'store-wp'),
-  'footer-info' => esc_html__('footer info', 'store-wp')
+  'footer-nav' => esc_html__('footer nav', 'store-wp')
 ));
 
-
-
+function change_rp_text($translated, $text, $domain)
+{
+    if ($text === 'Related products' && $domain === 'woocommerce') {
+        $translated = esc_html__('You may also like',  $domain);
+    }
+    return $translated;
+}
 
 ?>
 
