@@ -24,13 +24,21 @@ register_nav_menus(array(
   'footer-nav' => esc_html__('footer nav', 'store-wp')
 ));
 
-function change_rp_text($translated, $text, $domain)
-{
-    if ($text === 'Related products' && $domain === 'woocommerce') {
-        $translated = esc_html__('You may also like',  $domain);
-    }
-    return $translated;
+function create_post_type(){
+  register_post_type(
+        'stores',
+
+        array(
+            'labels' => array(
+                'name' => __('stores'),
+                'singular_name' => __('store'),
+                'add_new_item' => __('add store', 'text_domain'),
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'stores'),
+        )
+    );
 }
 
-?>
-
+add_action('init', 'create_post_type');

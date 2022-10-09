@@ -1,0 +1,2 @@
+2022-10-09T13:39:05+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) in C:\wamp64\www\store-wp\wp-includes\class-wp-hook.php on line 300
+
